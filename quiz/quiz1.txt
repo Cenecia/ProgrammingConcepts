@@ -1,0 +1,79 @@
+1.
+What date type would you use for variables that held the following data about cars?
+a)model_name
+b)number_of_doors
+c)cost
+d)is_used
+
+2.
+What would this php code output?
+
+<?php
+
+  fizzbuzz("fizz","buzz",123);
+
+  function fizzbuzz($x, $y, $z)
+  {
+    echo "$x $y $z";
+    echo "<br/>";
+    echo '$x $y $z';
+    echo '<br/>';
+    echo $x.$y.$z;
+  }
+?>
+
+3.
+What would this php code output?
+
+<?php
+
+  $num = doMath(3,7);
+  echo $num;
+
+  function doMath($x, $y)
+  {
+    $z = $x + $y;
+    $z = $z * 2;
+    return $z;
+  }
+?>
+
+4.
+What would this php code output?
+
+<?php
+  $cars = array("honda","chevy","ford","dodge");
+  echo $cars[2];
+?>
+
+5.
+What would this php code output?
+
+<?php
+  for($x=0; $x < 10; $x++){
+    echo $x;
+  }
+
+  echo "<br/>";
+  
+  $c = 10;
+  while($x > 0){
+    echo $c;
+    echo ",";
+    c--;
+  }
+?>
+
+6.
+Put a * next to any of the following programming terms if you think you know what they mean.
+
+function
+parameter
+class
+object
+property
+public
+private
+constructor
+instantiate
+
