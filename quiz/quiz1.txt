@@ -57,7 +57,7 @@ What would this php code output?
   echo "<br/>";
   
   $c = 10;
-  while($x > 0){
+  while($c > 0){
     echo $c;
     echo ",";
     c--;
