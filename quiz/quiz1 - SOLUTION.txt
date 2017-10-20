@@ -1,0 +1,132 @@
+1.
+What date type would you use for variables that held the following data about cars?
+a)model_name= string or object?
+b)number_of_doors= integer
+c)cost= float
+d)is_used= boolean
+
+SOLUTION:
+a)string
+b)integer
+c)float or decimal
+d)boolean
+
+//notes: decimal is ideal for money values but it's pretty much the same thing as float.
+
+2.
+What would this php code output?
+
+<?php
+
+  fizzbuzz("fizz","buzz",123);
+
+  function fizzbuzz($x, $y, $z)
+  {
+    echo "$x $y $z";
+    echo "<br/>";
+    echo '$x $y $z';
+    echo '<br/>';
+    echo $x.$y.$z;
+  }
+?>
+
+Output= fizz buzz 123 
+        fizz buzz 123
+        fizz.buzz.123
+
+SOLUTION
+fizz buzz 123
+$x $y $z
+fizzbuzz123
+
+//notes:
+'$x $y $z' outputs '$x $y $z' because in php, variables do not resolve when they are in single quotes. They only resolve in double quotes. So if you put '$varname' in single quotes it will output as literal $varname.
+$x.$y.$z outputs fizzbuzz123 because the . concatonates strings. So "Hello,"." World" would output Hello, World
+
+3.
+What would this php code output?
+
+<?php
+
+  $num = doMath(3,7);
+  echo $num;
+
+  function doMath($x, $y)
+  {
+    $z = $x + $y;
+    $z = $z * 2;
+    return $z;
+  }
+?>
+
+Output= 20
+
+SOLUTION
+20
+
+//notes:
+grate jorb!
+
+4.
+What would this php code output?
+
+<?php
+  $cars = array("honda","chevy","ford","dodge");
+  echo $cars[2];
+?>
+
+Output= honda, chevy, ford, dodge, honda, chevy, ford, dodge
+
+SOLUTION
+ford
+
+//notes:
+the 2 in $cars[2] means element #2 of the array. Arrays start at element 0 so $cars[0] would be "honda" and thus $cars[2] would be "ford".
+
+5.
+What would this php code output?
+
+<?php
+  for($x=0; $x < 10; $x++){
+    echo $x;
+  }
+
+  echo "<br/>";
+  
+  $c = 10;
+  while($c > 0){
+    echo $c;
+    echo ",";
+    c--;
+  }
+?>
+ Output= I am not sure
+
+SOLUTION
+0123456789
+10,9,8,7,6,5,4,3,2,1,
+
+//notes:
+the first line is a 'for loop' that says this: 
+$x starts at 0, keep looping while $x is 10, after each iteration of the loop add 1 to $x ($x++ means add 1). 
+
+After that loop I declared a new variable called $c and started it at 10. 
+the while($c > 0) below it means keep looping WHILE $c is greater than 10. 
+In the loop it outputs $c followed by a comma, and then subtracts 1 from c, and then checks the condition again. 
+So for the first loop it outputs "10," then subtracts 1 from $c. 
+$c is now at 9, which is greater than 0, so it loops again, outputs "9," then subtracts 1, $c is now at 8, so it loops again and so on. 
+By the time it gets to "1," it will sutract 1 which will make $c = 0, which is NOT greater than 0, so it exits the loop.
+
+6.
+Put a * next to any of the following programming terms if you think you know what they mean.
+
+function*
+parameter*
+class*
+object*
+property
+public
+private
+constructor
+instantiate
+
