@@ -1,0 +1,60 @@
+<?php
+	$c = "Tobias";
+	$show = getShow($c);
+	echo $show;
+	
+	function getShow($character)
+	{
+		switch($character){
+			case "Homer":
+			case "Marge":
+			case "Bart":
+			case "Lisa":
+			case "Maggie":
+				return "The Simpsons";
+				break;
+			case "Peter":
+			case "Lois":
+			case "Chris":
+			case "Meg":
+			case "Brian":
+				return "Family Guy";
+				break;
+			case "Michael":
+			case "Tobias":
+			case "Maeby":
+			case "Lucille":
+			case "Gob":
+			case "George Michael":
+			case "Lindsay":
+			case "George":
+				return "Arrested Development";
+				break;
+			default:
+				return "not found";
+		}
+	}
+?>
+
+1- What is the output of the above code?
+
+
+2- What would the output be if $c was set to "Bart"?
+
+
+3- What would the output be if $c was set to "Jerry"?
+
+
+<?php
+	$c = 0;
+	while($c < 10){
+		echo $c;
+		echo ",";
+		c++;
+	}
+?>
+
+4 - What is the output of the above code?
+
+
+5 - Write a for() loop that does the same thing as that while loop.

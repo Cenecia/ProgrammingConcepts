@@ -1,0 +1,79 @@
+Examples of switch():
+
+EXAMPLE 1 (simple version)
+<?php
+	$country = "France";
+	
+	switch ($country) {
+		case "Canada":
+			echo "Ottawa";
+			break;
+		case "USA":
+			echo "Washington, DC";
+			break;
+		case "United Kingdon":
+			echo "London";
+			break;
+		case "France":
+			echo "Paris";
+			break;
+		default:
+			//none of the 'cases' have been hit
+			echo "not found";
+			break;
+	}
+?>
+OUTPUTS: 
+Paris
+
+Notes:
+'default' is needed in every switch() and should be at the end.
+'break' will exit the switch().
+If you do not have a 'break' in your case, it will run the code in every case below it
+until it does hit a break. See the next example.
+
+
+EXAMPLE 2: (multiple case fall-through)
+<?php
+	$age = 17;
+	
+	switch($age){
+		case 0:
+		case 1:
+			echo "infant";
+			break;
+		case 2:
+		case 3:
+		case 4:
+			echo "toddler";
+			break;
+		case 6:
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+		case 11:
+		case 12:
+			echo "pre-teen";
+			break;
+		case 13:
+		case 14:
+		case 15:
+		case 16:
+		case 17:
+		case 18:
+		case 19:
+			echo "teenager";
+			break;
+		default:
+			echo "adult";
+			break;
+?>
+OUTPUTS:
+teenager
+
+NOTES:
+So if you want the same result from multiple cases,
+you can just have a bunch of empty cases and it will
+start at the case that matches and then will run the code in
+every case downward until it hits one with a break.
