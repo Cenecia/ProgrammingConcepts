@@ -5,20 +5,21 @@
 	
 	function getShow($character)
 	{
+		$result = "";
 		switch($character){
 			case "Homer":
 			case "Marge":
 			case "Bart":
 			case "Lisa":
 			case "Maggie":
-				return "The Simpsons";
+				$result = "The Simpsons";
 				break;
 			case "Peter":
 			case "Lois":
 			case "Chris":
 			case "Meg":
 			case "Brian":
-				return "Family Guy";
+				$result = "Family Guy";
 				break;
 			case "Michael":
 			case "Tobias":
@@ -28,11 +29,14 @@
 			case "George Michael":
 			case "Lindsay":
 			case "George":
-				return "Arrested Development";
+				$result = "Arrested Development";
 				break;
 			default:
-				return "not found";
+				$result = "not found";
+				break;
 		}
+		
+		return $result;
 	}
 ?>
 
