@@ -41,13 +41,13 @@
 ?>
 
 1- What is the output of the above code?
-
+Output: Arrested Development
 
 2- What would the output be if $c was set to "Bart"?
-
+Output: The Simpsons
 
 3- What would the output be if $c was set to "Jerry"?
-
+Output: not found
 
 <?php
 	$c = 0;
@@ -59,6 +59,13 @@
 ?>
 
 4 - What is the output of the above code?
+Output: 
+0123456789
 
 
 5 - Write a for() loop that does the same thing as that while loop.
+<?php
+      for ($c = 0; $c < 10; $c = $c + 1) {
+        echo $c;
+      }
+?>
