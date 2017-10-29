@@ -1,9 +1,11 @@
+test
+
 1.
 What date type would you use for variables that held the following data about cars?
-a)model_name
-b)number_of_doors
-c)cost
-d)is_used
+a)model_name= string or object?
+b)number_of_doors= integer
+c)cost= float
+d)is_used= boolean
 
 2.
 What would this php code output?
@@ -22,6 +24,9 @@ What would this php code output?
   }
 ?>
 
+Output= fizz buzz 123 
+        fizz buzz 123
+        fizz.buzz.123
 3.
 What would this php code output?
 
@@ -38,6 +43,9 @@ What would this php code output?
   }
 ?>
 
+Output= 20
+         
+
 4.
 What would this php code output?
 
@@ -45,6 +53,8 @@ What would this php code output?
   $cars = array("honda","chevy","ford","dodge");
   echo $cars[2];
 ?>
+
+Output= honda, chevy, ford, dodge, honda, chevy, ford, dodge
 
 5.
 What would this php code output?
@@ -63,14 +73,14 @@ What would this php code output?
     c--;
   }
 ?>
-
+ Output= I am not sure
 6.
 Put a * next to any of the following programming terms if you think you know what they mean.
 
-function
-parameter
-class
-object
+function*
+parameter*
+class*
+object*
 property
 public
 private
